@@ -1,0 +1,7 @@
+{
+  "name": "Piwik",
+  "description": "Piwik is the leading open-source analytics platform that gives you more than just powerful analytics:",
+  "repository": "https://github.com/dz0ny/heroku-docker-piwik",
+  "logo": "http://piwik.org/wp-content/themes/piwik/assets/img/media/piwik.png",
+  "keywords": ["php", "piwik", "analytics"]
+}
