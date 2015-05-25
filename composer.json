@@ -1,0 +1,29 @@
+{
+  "name": "dz0ny/heroku-docker-piwik",
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "piwik",
+        "version": "2.13.1",
+        "type": "project",
+        "dist": {
+          "type": "zip",
+          "url": "http://builds.piwik.org/piwik-2.13.1.zip"
+        }
+      }
+    }
+  ],
+  "authors": [
+    {
+      "name": "Janez Troha",
+      "email": "dz0ny@ubuntu.si"
+    }
+  ],
+  "require": {
+    "php": "~5.6.0",
+    "piwik": "*",
+    "ext-mbstring": "*",
+    "ext-gd": "*"
+  }
+}
