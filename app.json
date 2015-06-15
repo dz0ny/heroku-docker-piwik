@@ -1,7 +1,41 @@
 {
-  "name": "Piwik",
-  "description": "Piwik is the leading open-source analytics platform that gives you more than just powerful analytics:",
-  "repository": "https://github.com/dz0ny/heroku-docker-piwik",
-  "logo": "http://piwik.org/wp-content/themes/piwik/assets/img/media/piwik.png",
-  "keywords": ["php", "piwik", "analytics"]
+    "name": "Piwik",
+    "description": "Piwik is the leading open-source analytics platform that gives you more than just powerful analytics:",
+    "repository": "https://github.com/dz0ny/heroku-docker-piwik",
+    "logo": "http://piwik.org/wp-content/themes/piwik/assets/img/media/piwik.png",
+    "keywords": [
+        "php",
+        "piwik",
+        "analytics"
+    ],
+    "env": {
+        "SECRET_TOKEN": {
+            "description": "A secret key for verifying the integrity of signed cookies.",
+            "generator": "secret"
+        },
+        "DB_HOST": {
+            "description": "MySQL database host.",
+            "value": "localhost"
+        },
+        "DB_PORT": {
+            "description": "MySQL database port.",
+            "value": "3360"
+        },
+        "DB_USERNAME": {
+            "description": "MySQL database username.",
+            "value": "root"
+        },
+        "DB_PASSWORD": {
+            "description": "MySQL database password.",
+            "value": "password"
+        },
+        "DB_NAME": {
+            "description": "MySQL database name.",
+            "value": "piwik"
+        },
+        "DB_PREFIX": {
+            "description": "MySQL database prefix for tables.",
+            "value": "pw_"
+        }
+    }
 }
