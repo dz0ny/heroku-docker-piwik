@@ -19,7 +19,7 @@
         },
         "DB_PORT": {
             "description": "MySQL database port.",
-            "value": "3360"
+            "value": "3306"
         },
         "DB_USERNAME": {
             "description": "MySQL database username.",
