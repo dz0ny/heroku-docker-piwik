@@ -1,8 +1,9 @@
 # Piwik on Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![](https://badge.imagelayers.io/dz0ny/heroku-docker-piwik:latest.svg)](https://imagelayers.io/?images=dz0ny/heroku-docker-piwik:latest 'Get your own badge on imagelayers.io')
 
-Version: *2.13.1*
+Version: *2.16.0*
 
 ## Installation
 

@@ -1,0 +1,80 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "27873e76934a0dce55d021e7f703dee1",
+    "content-hash": "1f5ba102f0ac84b7fc09b102f09308f6",
+    "packages": [
+        {
+            "name": "piwik",
+            "version": "2.16.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://builds.piwik.org/piwik-2.16.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "project"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "heroku/heroku-buildpack-php",
+            "version": "v94",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heroku/heroku-buildpack-php.git",
+                "reference": "d88631c227eda4bb32dae72a1d1c047eef2f94dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/d88631c227eda4bb32dae72a1d1c047eef2f94dc",
+                "reference": "d88631c227eda4bb32dae72a1d1c047eef2f94dc",
+                "shasum": ""
+            },
+            "bin": [
+                "bin/heroku-hhvm-apache2",
+                "bin/heroku-hhvm-nginx",
+                "bin/heroku-php-apache2",
+                "bin/heroku-php-nginx"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Zuelke",
+                    "email": "dz@heroku.com"
+                }
+            ],
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
+            "homepage": "http://github.com/heroku/heroku-buildpack-php",
+            "keywords": [
+                "apache",
+                "apache2",
+                "foreman",
+                "heroku",
+                "hhvm",
+                "nginx",
+                "php"
+            ],
+            "time": "2016-02-26 19:27:49"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "~7.0.3",
+        "ext-mbstring": "*",
+        "ext-gd": "*",
+        "ext-apcu": "*"
+    },
+    "platform-dev": []
+}

@@ -21,7 +21,17 @@ RUN mkdir -p /tmp/environment
 WORKDIR /app/
 RUN git clone https://github.com/heroku/heroku-buildpack-php.git /tmp/php-pack --depth 1
 
-ONBUILD COPY . /app
-ONBUILD RUN bash -l /tmp/php-pack/bin/compile /app /tmp/cache /app/.env
+COPY . /app
+RUN bash -l /tmp/php-pack/bin/compile /app /tmp/cache /app/.env
+RUN rm vendor/piwik/piwik/config/config.ini.php
+RUN rm -rf /tmp/cache
+RUN rm -rf /tmp/php-pack
 
-ONBUILD EXPOSE 3000
+RUN cd vendor/piwik/piwik/misc \
+ && curl http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz > GeoLiteCity.dat.gz \
+ && gunzip GeoLiteCity.dat.gz \
+ && mv GeoLiteCity.dat GeoIPCity.dat
+
+ENTRYPOINT ["/app/entrypoint.sh"]
+CMD ["/app/vendor/heroku/heroku-buildpack-php/bin/heroku-php-nginx -C nginx.conf -F fpm_custom.conf vendor/piwik/piwik/"]
+EXPOSE 3000

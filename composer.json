@@ -5,11 +5,11 @@
             "type": "package",
             "package": {
                 "name": "piwik",
-                "version": "2.13.1",
+                "version": "2.16.0",
                 "type": "project",
                 "dist": {
                     "type": "zip",
-                    "url": "http://builds.piwik.org/piwik-2.13.1.zip"
+                    "url": "https://builds.piwik.org/piwik-2.16.0.zip"
                 }
             }
         }
@@ -21,11 +21,14 @@
         }
     ],
     "require": {
-        "php": "~5.6.0",
+        "php": "~7.0.3",
         "piwik": "*",
         "ext-mbstring": "*",
-        "ext-gd": "*"
+        "ext-gd": "*",
+        "ext-apcu": "*"
     },
+      "require-dev": {
+    "heroku/heroku-buildpack-php": "*"},
     "scripts": {
         "compile": [
             "cp config.ini.php vendor/piwik/piwik/config/config.ini.php",
