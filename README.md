@@ -7,7 +7,17 @@ Version: *2.16.0*
 
 ## Installation
 
-Deploy to Heroku and add mysql add-on then simply follow install steps.
+ - Deploy to Heroku and accept default parameter
+ - add mysql add-on like JawsDB MySQL
+ - Go to your App Setting > Config Variables, then edit database variables. you can get the variables from **JAWSDB_URL**
+
+JAWSDB_URL DB format:
+
+    mysql://username:password@host:port/databaseName
+
+ - open your app url, follow installation and add again DB variables from JAWSDB_URL
+ - done.
+
 
 ## Technical stuff
 
@@ -23,3 +33,5 @@ for more info...
 ## What about that Dockerfile?
 
 You can run app on any cloud service that supports docker(dokku, deis, metal...).
+
+
