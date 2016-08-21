@@ -31,7 +31,6 @@
     "heroku/heroku-buildpack-php": "*"},
     "scripts": {
         "compile": [
-            "cp config.ini.php vendor/piwik/piwik/config/config.ini.php",
             "cp img.php vendor/piwik/piwik/img.php"
         ]
     }
