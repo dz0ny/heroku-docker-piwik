@@ -9,10 +9,10 @@
     "packages": [
         {
             "name": "piwik",
-            "version": "2.16.0",
+            "version": "2.16.2",
             "dist": {
                 "type": "zip",
-                "url": "https://builds.piwik.org/piwik-2.16.0.zip",
+                "url": "https://builds.piwik.org/piwik-2.16.2.zip",
                 "reference": null,
                 "shasum": null
             },
