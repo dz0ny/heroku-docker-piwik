@@ -28,5 +28,10 @@
         "ext-apcu": "*"
     },
       "require-dev": {
-    "heroku/heroku-buildpack-php": "*"}
+    "heroku/heroku-buildpack-php": "*"},
+    "scripts": {
+        "compile": [
+            "cp img.php vendor/piwik/piwik/img.php"
+        ]
+    }
 }
