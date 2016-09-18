@@ -31,7 +31,7 @@ port = <?php $db_port; ?>
 charset = "utf8"
 
 [General]
-salt = "#SECRET_TOKEN"
+salt = "<?php $_ENV['SECRET'] ?>"
 session_save_handler = dbtable
 
 [PluginsInstalled]
