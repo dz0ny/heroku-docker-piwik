@@ -22,12 +22,12 @@
 ?>
 
 [database]
-host = <?php $db_host; ?>
-username = <?php $db_user; ?>
-password = <?php $db_pass; ?>
-dbname = <?php $db_name; ?>
-tables_prefix = <?php $_ENV['DB_PREFIX']; ?>
-port = <?php $db_port; ?>
+host = "<?php echo $db_host; ?>"
+username = "<?php echo $db_user; ?>"
+password = "<?php echo $db_pass; ?>"
+dbname = "<?php echo $db_name; ?>"
+tables_prefix = "<?php echo $_ENV['DB_PREFIX']; ?>"
+port = "<?php echo $db_port; ?>"
 charset = "utf8"
 
 [General]
