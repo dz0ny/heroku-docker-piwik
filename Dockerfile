@@ -23,7 +23,7 @@ RUN git clone https://github.com/heroku/heroku-buildpack-php.git /tmp/php-pack -
 
 COPY . /app
 RUN bash -l /tmp/php-pack/bin/compile /app /tmp/cache /app/.env
-RUN rm vendor/piwik/piwik/config/config.ini.php
+#RUN rm vendor/piwik/piwik/config/config.ini.php
 RUN rm -rf /tmp/cache
 RUN rm -rf /tmp/php-pack
 

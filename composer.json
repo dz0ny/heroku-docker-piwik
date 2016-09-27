@@ -27,6 +27,11 @@
         "ext-gd": "*",
         "ext-apcu": "*"
     },
-      "require-dev": {
-    "heroku/heroku-buildpack-php": "*"}
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"},
+    "scripts": {
+        "compile": [
+              "cp config.ini.php vendor/piwik/piwik/config/config.ini.php"
+        ]
+    }
 }
