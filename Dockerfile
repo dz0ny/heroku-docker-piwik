@@ -1,4 +1,4 @@
-FROM heroku/cedar:14
+FROM heroku/heroku:16
 
 RUN useradd -d /app -m app
 USER app
@@ -6,7 +6,7 @@ USER app
 ENV HOME /app
 ENV PORT 3000
 ENV PATH /app/.heroku/php/bin:/app/.heroku/php/sbin:/tmp/php-pack/bin:$PATH
-ENV STACK cedar-14
+ENV STACK heroku-16
 ENV DOCKER_BUILD 1
 
 

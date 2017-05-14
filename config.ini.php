@@ -1,17 +1,26 @@
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 ; file automatically generated or modified by Piwik; you can manually override the default values in global.ini.php by redefining them in this file.
 [database]
-host = <?php $_ENV['DB_HOST']; ?>
-username = <?php $_ENV['DB_USERNAME']; ?>
-password = <?php $_ENV['DB_PASSWORD']; ?>
-dbname = <?php $_ENV['DB_NAME']; ?>
-tables_prefix = <?php $_ENV['DB_PREFIX']; ?>
-port = <?php $_ENV['DB__PORT']; ?>
-charset = "utf8"
+host          = ${DB_HOST}
+username      = ${DB_USERNAME}
+password      = ${DB_PASSWORD}
+dbname        = ${DB_NAME}
+tables_prefix = ${DB_PREFIX}
+port          = ${DB_PORT}
+charset       = "utf8"
 
 [General]
-salt = "#SECRET_TOKEN"
+salt          = "#SECRET_TOKEN"
 session_save_handler = dbtable
+
+[mail]
+transport     = ${MAIL_TRANSPORT}     ; 'smtp' or empty (default)
+port          = ${SMTP_PORT}          ; usually 25 (default), 465 (deprecated SSL), or 587 (TLS)
+host          = ${SMTP_HOST}          ; your.smtp.mail.handler.com
+type          = ${SMTP_AUTH_METHOD}   ; 'Plain', 'Login', 'Crammd5' or empty (default)
+encryption    = ${SMTP_ENCRYPTION}    ; 'ssl', 'tls', or empty (default)
+username      = ${SMTP_USERNAME}
+password      = ${SMTP_PASSWORD}
 
 [PluginsInstalled]
 PluginsInstalled[] = "Diagnostics"

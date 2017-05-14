@@ -4,15 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "27873e76934a0dce55d021e7f703dee1",
-    "content-hash": "1f5ba102f0ac84b7fc09b102f09308f6",
+    "content-hash": "b8d60bdcd492c2a4fb2fc473beca1cf0",
     "packages": [
         {
             "name": "piwik",
-            "version": "2.16.0",
+            "version": "3.0.3",
             "dist": {
                 "type": "zip",
-                "url": "https://builds.piwik.org/piwik-2.16.0.zip",
+                "url": "https://builds.piwik.org/piwik-3.0.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -22,16 +21,16 @@
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v94",
+            "version": "v121",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "d88631c227eda4bb32dae72a1d1c047eef2f94dc"
+                "reference": "727aa850a02a7af94c9225237464be8e8c8ff6db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/d88631c227eda4bb32dae72a1d1c047eef2f94dc",
-                "reference": "d88631c227eda4bb32dae72a1d1c047eef2f94dc",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/727aa850a02a7af94c9225237464be8e8c8ff6db",
+                "reference": "727aa850a02a7af94c9225237464be8e8c8ff6db",
                 "shasum": ""
             },
             "bin": [
@@ -52,7 +51,7 @@
                 }
             ],
             "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
-            "homepage": "http://github.com/heroku/heroku-buildpack-php",
+            "homepage": "https://github.com/heroku/heroku-buildpack-php",
             "keywords": [
                 "apache",
                 "apache2",
@@ -62,7 +61,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2016-02-26 19:27:49"
+            "time": "2017-03-27T23:33:27+00:00"
         }
     ],
     "aliases": [],
@@ -71,7 +70,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "~7.0.3",
+        "php": "~7.1",
         "ext-mbstring": "*",
         "ext-gd": "*",
         "ext-apcu": "*"
